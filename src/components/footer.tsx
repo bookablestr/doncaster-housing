@@ -8,7 +8,7 @@ export default function Footer() {
     <div className=" text-xl lg:2xl font-nunito">
       <div className="bg-[#1B54A9]  md:flex justify-between gap-20 lg:p-12 p-6 text-[#FFFBFB]">
         <div className="lg:w-1/2">
-          <div className="flex border py-2  border-red-600 lg:flex-row items-center flex-col gap-4">
+          <div className="flex py-2 lg:flex-row items-center flex-col gap-4">
             <div className="mx-0">
               <Image
                 src={bookablestr}
