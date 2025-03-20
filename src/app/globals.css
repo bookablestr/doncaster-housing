@@ -35,3 +35,15 @@ h5,
 h6 {
   font-family: var(--font-tangerine);
 }
+
+.custom-gradient {
+  background: linear-gradient(92.65deg, #ffffff -94.29%, #1b54a9 57.7%);
+}
+
+.custom-gradient-text {
+  background: linear-gradient(92.65deg, #ffffff -94.29%, #1b54a9 57.7%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}

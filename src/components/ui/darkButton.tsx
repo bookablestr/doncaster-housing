@@ -6,7 +6,7 @@ export const DarkButton = ({ text, classname }: buttonProps) => {
     <div>
       <button
         className={clsx(
-          "bg-primary-gradient text-text rounded-full w-[230px] h-[51px] lg:w-[320px] lg:h-[80px] p-[12px] space-x-[10px]  text-lg transition duration-300 transform hover:scale-105",
+          "custom-gradient font-bold font-quicksand text-white rounded-full w-full  lg:h-[60px] lg:py-[6px] lg:px-[30px] py-[10px] px-[20px] space-x-[10px]  text-lg lg:text-2xl transition duration-300 transform hover:scale-105",
           classname
         )}
       >

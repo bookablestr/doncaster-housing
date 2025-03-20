@@ -10,6 +10,7 @@ const tailwindConfig = {
       colors: {
         background: "#FFFBFB",
         foreground: "var(--foreground)",
+        primaryGradient: "linear-gradient(90deg, #FFFFFF 20%, #1B54A9 80%)",
         primaryBlue: {
           DEFAULT: "#054678",
           light: "#0981DE",

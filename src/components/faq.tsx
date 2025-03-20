@@ -1,55 +1,63 @@
 "use client";
-import { ChevronDown } from "lucide-react";
+import { ChevronUp } from "lucide-react";
 import { useState } from "react";
+import { DarkButton } from "./ui/darkButton";
+
+type FaqItemProps = {
+  i: {
+    question: string;
+    answer: string;
+  };
+};
 
 export default function Faq() {
   const faqs = [
     {
-      question: `What is BookableSTR?`,
-      answer: `BookableSTR is a professional short-term rental management service that specializes in maximizing the profitability of your rental property`,
+      question: `What are you check-in and check-out times?`,
+      answer: `Answer to the question goes here. Answer to the question goes here.  Answer to the question goes here.  Answer to the question goes here. `,
     },
     {
-      question: `What fees do you charge for your services?`,
-      answer: `Our fees are competitive and tailored to your property's needs. We typically operate on a performance-based structure, meaning we only succeed when you succeed. Specific details will be outlined during our consultation.`,
+      question: `Do you allow pets?`,
+      answer: `Answer to the question goes here. Answer to the question goes here.  Answer to the question goes here.  Answer to the question goes here. `,
     },
     {
       question: `How do I get started with BookableSTR?`,
-      answer: `Getting started is easy! Contact us for a free consultation, discuss your
-            goals, and create a customized website plan tailored to your needs`,
-    },
-    {
-      question: `How long does it take to get a website ready?`,
-      answer: `It takes us about 3-4 weeks.`,
+      answer: `Answer to the question goes here. Answer to the question goes here.  Answer to the question goes here.  Answer to the question goes here. `,
     },
   ];
 
   return (
-    <div className="bg-white py-[40px] lg:py-[60px] px-[16px] flex flex-col items-center justify-center">
-      <div className="font-quicksand font-bold lg:text-[60px] text-[20px] text-[#121212]">
-        FAQ
+    <div className="bg-white text-[#2E2F38] py-[40px] lg:py-[60px] px-[16px] flex flex-col items-center justify-center">
+      <div className="font-tangerine font-bold lg:text-8xl text-2xl">
+        Frequent
+        <span className="custom-gradient-text">Asked</span> Questions
       </div>
-      <div className="text-[#121212] font-nunito font-medium text-[12px] mt-[14px] lg:mt-[20px] lg:text-[28px] text-center w-[231px] lg:w-[468px]">
-        Still got questions? Here are some frequently asked questions
+      <div className=" font-raleway font-medium text-sm mt-[14px] lg:mt-[20px] lg:text-2xl text-center">
+        Here are some frequently asked questions
       </div>
-      <div className="mt-[24px] lg:mt-[40px] border-[0.5px] border-[#121212] rounded-[12px] p-[16px] lg:p-[40px] w-full max-w-[820px]">
+      <div className="mt-[24px] font-raleway lg:mt-[40px]  rounded-[12px] p-[16px] lg:p-[40px] w-full max-w-[820px]">
         {faqs.map((i, index) => (
           <FaqItem i={i} key={index} />
         ))}
+      </div>
+      <div className="py-6">
+        <p className="lg:text-2xl text-sm"> Still got more questions? </p>
+        <DarkButton text="Contact Us" classname="w-[60px] mt-4" />
       </div>
     </div>
   );
 }
 
-function FaqItem({ i }: { i: any }) {
+function FaqItem({ i }: FaqItemProps) {
   const [showanswer, setShowanswer] = useState(false);
 
   return (
-    <div className="text-[#121212] py-[8px] lg:py-[16px] mt-[8px] lg:mt-[24px] first:mt-0 border-b-[0.5px] border-[#121212] last:border-none">
-      <div className="flex justify-between items-start gap-[60px]">
-        <div className="font-nunito font-semibold text-base lg:text-[28px] w-full">
+    <div className="text-[#121212] border-[0.5px] border-l-[8px]  rounded-2xl border-[#2E2F38] border-l-[#1B54A9] font-raleway  mt-[8px] lg:mt-[24px] first:mt-0  ">
+      <div className="flex py-2 lg:py-4 px-4 justify-between items-start gap-[60px]  ">
+        <div className=" font-medium text-base lg:text-2xl w-full">
           {i.question}
         </div>
-        <ChevronDown
+        <ChevronUp
           onClick={() => setShowanswer(!showanswer)}
           className={`text-[12px] flex-shrink-0 ${
             showanswer ? "rotate-180" : "rotate-0"
@@ -57,8 +65,8 @@ function FaqItem({ i }: { i: any }) {
         />
       </div>
       <div
-        className={`font-nunito text-[12px] lg:text-[24px] ${
-          showanswer ? "h-max mt-[8px] lg:mt-[16px]" : "h-0 mt-0"
+        className={`bg-[#e7eaf3] text-[12px]  lg:text-xl ${
+          showanswer ? "h-max mt-2 px-4 lg:mt-4 py-4 rounded-b-2xl" : "h-0 mt-0"
         } overflow-hidden`}
       >
         {i.answer}

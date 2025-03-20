@@ -41,10 +41,10 @@ export const Nav = () => {
   }, [nav]);
 
   return (
-    <div className=" text-2xl relative ">
-      <nav className="  flex gap-10 bg-white items-center justify-between  lg:px-6 lg:pr-[16px] px-2 ">
+    <div className=" md:text-2xl text-xl relative ">
+      <nav className="py-2 flex gap-10 bg-white items-center justify-between  lg:px-12 px-4 ">
         <Link href={"/"}>
-          <h1 className="text-primaryBlue text-gray text-[40px] font-bold">
+          <h1 className="custom-gradient-text text-[40px] font-bold">
             Doncaster Housing
           </h1>
         </Link>
@@ -55,7 +55,9 @@ export const Nav = () => {
             return (
               <li
                 key={items.id}
-                className={`${isActive ? `border-b` : `border-none`}`}
+                className={`${
+                  isActive ? `border-b border-[#1B54A9]` : `border-none`
+                }`}
               >
                 {" "}
                 <Link href={items.href}>{items.text}</Link>
@@ -66,7 +68,7 @@ export const Nav = () => {
         <Link target="_blank" href="https://calendly.com/bookablestr/30min">
           <DarkButton
             text="Make a Reservation"
-            classname="text-xl hidden lg:block"
+            classname="text-xl hidden lg:block my-2"
           />
         </Link>
 
@@ -97,7 +99,7 @@ export const Nav = () => {
               animate={{ x: "0%", opacity: 1 }}
               exit={{ x: "-100%", opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="h-screen pt-[52px] fixed inset-0 w-[75%] max-w-[270px] bg-text-dark text-text z-20"
+              className="h-screen pt-[52px] fixed inset-0 w-[75%] max-w-[270px] bg-white text-[#121212] z-20"
             >
               {/* <div
                 className="absolute top-4 right-4 cursor-pointer"
@@ -107,7 +109,7 @@ export const Nav = () => {
               </div> */}
 
               <Link href={"/"}>
-                <h1 className="text-backgroundImage-primary-gradient">
+                <h1 className="custom-gradient-text text-[40px] pl-2 font-bold">
                   Doncaster Housing
                 </h1>
               </Link>
@@ -119,7 +121,9 @@ export const Nav = () => {
                     <li
                       key={items.id}
                       className={`${
-                        isActive ? `border-b w-fit` : `border-none`
+                        isActive
+                          ? `border-b w-fit border-[#1B54A9]`
+                          : `border-none`
                       }`}
                     >
                       {" "}
