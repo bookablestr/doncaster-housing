@@ -28,21 +28,21 @@ export default function Faq() {
 
   return (
     <div className="bg-white text-[#2E2F38] py-[40px] lg:py-[60px] px-[16px] flex flex-col items-center justify-center">
-      <div className="font-tangerine font-bold lg:text-8xl text-2xl">
+      <div className="font-tangerine font-bold lg:text-8xl text-6xl">
         Frequent
         <span className="custom-gradient-text">Asked</span> Questions
       </div>
-      <div className=" font-raleway font-medium text-sm mt-[14px] lg:mt-[20px] lg:text-2xl text-center">
+      <div className=" font-raleway font-medium text-lg mt-[14px] lg:mt-[20px] lg:text-2xl text-center">
         Here are some frequently asked questions
       </div>
-      <div className="mt-[24px] font-raleway lg:mt-[40px]  rounded-[12px] p-[16px] lg:p-[40px] w-full max-w-[820px]">
+      <div className="mt-[24px] font-raleway lg:mt-[40px]  rounded-[12px] p-4 lg:p-6 w-full max-w-[820px]">
         {faqs.map((i, index) => (
           <FaqItem i={i} key={index} />
         ))}
       </div>
       <div className="py-6">
-        <p className="lg:text-2xl text-sm"> Still got more questions? </p>
-        <DarkButton text="Contact Us" classname="w-[60px] mt-4" />
+        <p className="lg:text-2xl text-xl"> Still got more questions? </p>
+        <DarkButton text="Contact Us" classname="w-[60px]  mt-4" />
       </div>
     </div>
   );
@@ -52,8 +52,8 @@ function FaqItem({ i }: FaqItemProps) {
   const [showanswer, setShowanswer] = useState(false);
 
   return (
-    <div className="text-[#121212] border-[0.5px] border-l-[8px]  rounded-2xl border-[#2E2F38] border-l-[#1B54A9] font-raleway  mt-[8px] lg:mt-[24px] first:mt-0  ">
-      <div className="flex py-2 lg:py-4 px-4 justify-between items-start gap-[60px]  ">
+    <div className="text-[#121212] border-[0.5px] border-l-[8px] my-4 rounded-2xl border-[#2E2F38] border-l-[#1B54A9] font-raleway  mt-[8px] lg:mt-[24px] first:mt-0  ">
+      <div className="flex py-4  px-4 justify-between items-start gap-[60px]  ">
         <div className=" font-medium text-base lg:text-2xl w-full">
           {i.question}
         </div>
@@ -65,7 +65,7 @@ function FaqItem({ i }: FaqItemProps) {
         />
       </div>
       <div
-        className={`bg-[#e7eaf3] text-[12px]  lg:text-xl ${
+        className={`bg-[#e7eaf3] text-sm  lg:text-xl ${
           showanswer ? "h-max mt-2 px-4 lg:mt-4 py-4 rounded-b-2xl" : "h-0 mt-0"
         } overflow-hidden`}
       >

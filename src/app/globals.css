@@ -47,3 +47,7 @@ h6 {
   background-clip: text;
   color: transparent;
 }
+
+.custom-third-gradient {
+  background: linear-gradient(to right, #f1f0f6 0%, #e7eaf1 100%);
+}
