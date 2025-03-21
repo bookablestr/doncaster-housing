@@ -1,3 +1,4 @@
+import Booking from "@/components/booking";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
 import ThirdParty from "@/components/thirdParty";
@@ -11,7 +12,7 @@ export default function Home() {
         text2={"your next shortlet apartment with"}
         text3={"us"}
       />
-
+      <Booking />
       <ThirdParty />
       <Footer />
     </div>

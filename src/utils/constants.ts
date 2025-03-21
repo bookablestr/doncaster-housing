@@ -5,6 +5,8 @@ import safety from "@/images/safety.png";
 import property1 from "@/images/property1.png";
 import property2 from "@/images/property2.png";
 import property3 from "@/images/property3.png";
+import house1 from "@/images/house.png";
+import house2 from "@/images/house2.png";
 
 export const features = [
   { id: 1, img: Convenience, text: "Convenience" },
@@ -48,5 +50,74 @@ export const property = [
     description: "Description",
     features: "Features",
     price: "Price",
+  },
+];
+
+export const house = [
+  {
+    id: 1,
+    img: house1,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
+  },
+  {
+    id: 2,
+    img: house2,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
+  },
+  {
+    id: 3,
+    img: house1,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
+  },
+  {
+    id: 4,
+    img: house2,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
+  },
+  {
+    id: 5,
+    img: house1,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
+  },
+  {
+    id: 6,
+    img: house2,
+    location: "Doncaster - United Kingdom",
+    toilet: "2",
+    room: "2",
+    apartment: "2 Bedroom - Flat",
+    price: "$ 50.00",
+    night: "/night",
+    link: "/",
   },
 ];
