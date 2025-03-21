@@ -3,7 +3,12 @@ import { Nav } from "./nav";
 import { CalendarDays, MapPin, User } from "lucide-react";
 import { DarkButton } from "./ui/darkButton";
 
-const Hero = () => {
+interface HeroProps {
+  text1: string;
+  text2: string;
+  text3: string;
+}
+const Hero = ({ text1, text2, text3 }: HeroProps) => {
   return (
     <div className="bg-[url('../images/hero.png')] bg-cover bg-no-repeat">
       <Nav />
@@ -11,13 +16,11 @@ const Hero = () => {
       <div className="flex flex-col justify-center items-center py-20 md:py-36 px-4">
         <h1 className="text-center tracking-normal leading-[100%] text-2xl md:text-5xl font-bold text-[#FFFBFB] md:w-[60%] w-full">
           <span className="font-tangerine text-[100px]  text-[#CCE9FF]">
-            Enjoy
+            {text1}
           </span>{" "}
-          <span className="font-raleway">
-            your next vacation with out rental
-          </span>{" "}
+          <span className="font-raleway">{text2}</span>{" "}
           <span className="font-tangerine text-[120px]  text-[#CCE9FF]">
-            homes
+            {text3}
           </span>
         </h1>
 

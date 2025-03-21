@@ -27,12 +27,12 @@ export default function Faq() {
   ];
 
   return (
-    <div className="bg-white text-[#2E2F38] py-[40px] lg:py-[60px] px-[16px] flex flex-col items-center justify-center">
-      <div className="font-tangerine font-bold lg:text-8xl text-6xl">
+    <div className="bg-white text-[#2E2F38] py-[40px] lg:py-[60px]  flex flex-col items-center justify-center">
+      <div className="font-tangerine text-center font-bold lg:text-8xl text-5xl">
         Frequent
         <span className="custom-gradient-text">Asked</span> Questions
       </div>
-      <div className=" font-raleway font-medium text-lg mt-[14px] lg:mt-[20px] lg:text-2xl text-center">
+      <div className="px-4 font-raleway font-medium text-lg mt-[14px] lg:mt-[20px] lg:text-2xl text-center">
         Here are some frequently asked questions
       </div>
       <div className="mt-[24px] font-raleway lg:mt-[40px]  rounded-[12px] p-4 lg:p-6 w-full max-w-[820px]">
