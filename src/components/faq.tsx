@@ -28,7 +28,7 @@ export default function Faq() {
 
   return (
     <div className="bg-white text-[#2E2F38] py-[40px] lg:py-[60px]  flex flex-col items-center justify-center">
-      <div className="font-tangerine text-center font-bold lg:text-8xl text-5xl">
+      <div className="font-tangerine px-4 text-center font-bold lg:text-8xl text-5xl">
         Frequent
         <span className="custom-gradient-text">Asked</span> Questions
       </div>

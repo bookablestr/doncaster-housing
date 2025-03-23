@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="lg:border-l-2 border-0 lg:pl-2 pl-6 lg:-ml-6 w-[50%] lg:w-full  ml-0 border-[#FFFBFB] text-xl">
+            <p className="lg:border-l-2 border-0 lg:pl-2 pl-6 lg:-ml-6 w-[60%] lg:w-full  ml-0 border-[#FFFBFB] text-xl">
               Interested in getting a website similar to this. Send us a
               Message.
             </p>

@@ -12,6 +12,7 @@ export default function Home() {
         text1={"Enjoy"}
         text2={"your next vacation with our rental"}
         text3={"homes"}
+        availability={true}
       />
       <HomeBody />
 
