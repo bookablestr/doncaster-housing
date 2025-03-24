@@ -6,7 +6,7 @@ import React from "react";
 
 export default function ReservationPage() {
   return (
-    <div>
+    <div className="bg-white">
       <Nav />
       <Reservation />
       <ThirdParty />
