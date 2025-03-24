@@ -9,7 +9,7 @@ import React, { useState } from "react";
 export default function BookingDetailsPage() {
   const [isBooking, setIsBooking] = useState(false);
   return (
-    <div>
+    <div className="bg-white">
       {!isBooking && (
         <Hero
           text1={"Enjoy"}
