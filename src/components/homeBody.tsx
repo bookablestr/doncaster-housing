@@ -5,7 +5,7 @@ import PropertySlide from "./propertySlide";
 
 const HomeBody = () => {
   return (
-    <div className=" lg:py-16 py-10">
+    <div className="text-black lg:py-16 py-10">
       <div className="flex lg:px-12 px-6 flex-col justify-center items-center gap-6">
         <h2 className="text-6xl custom-gradient-text font-bold lg:text-8xl">
           Header Text
