@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <div className="bg-white ">
+    <div className="bg-white text-black">
       <div className="lg:px-12 px-6 pt-10">
         <div className="font-tangerine px-4 text-center font-bold lg:text-8xl text-5xl">
           Get in <span className="custom-gradient-text">touch</span>
