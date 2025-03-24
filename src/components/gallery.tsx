@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Gallery = () => {
   return (
-    <div className="">
+    <div className="text-black">
       <div className="bg-[url('../images/hero.png')] bg-cover bg-no-repeat">
         <Nav />
 
