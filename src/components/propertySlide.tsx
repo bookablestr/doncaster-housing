@@ -15,7 +15,7 @@ const PropertySlide = () => {
     setCurrentIndex(index);
   };
   return (
-    <div className="py-20">
+    <div className="py-20 text-black">
       <div>
         <div className="flex lg:px-12 px-6 items-center flex-col justify-center">
           <div className="font-tangerine custom-gradient-text font-bold lg:text-8xl text-6xl">
