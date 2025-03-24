@@ -16,7 +16,7 @@ const Reservation = () => {
       <div className="flex flex-col lg:flex-row gap-10 my-10 text-[#2E2F38]">
         <div>
           <table className="w-full border-[0.5px] border-[#2E2F38] rounded-xl">
-            <thead className="text-base lg:text-xl font-semibold">
+            <thead className="text-base text-left rounded-t-xl lg:text-xl font-semibold">
               <tr>
                 <th className="p-3">Property</th>
                 <th className="p-3">Price</th>
@@ -24,19 +24,21 @@ const Reservation = () => {
                 <th className="p-3">Action</th>
               </tr>
             </thead>
-            <tbody className="text-xs lg:text-xl">
-              <tr className="">
-                <td className="p-3 flex lg:flex-row flex-col items-center gap-4">
-                  <Image
-                    src={houseImg}
-                    alt="house"
-                    width={100}
-                    height={100}
-                    className="rounded-xl lg:h-[96px] lg:w-[72px] h-[50px] w-[50px]"
-                  />
-                  <div>
-                    <p className="font-bold">2 Bedroom flat</p>
-                    <p>Doncaster, United Kingdom</p>
+            <tbody className="text-xs lg:text-xl rounded-b-xl">
+              <tr>
+                <td className="p-3">
+                  <div className="flex lg:flex-row flex-col items-center gap-4">
+                    <Image
+                      src={houseImg}
+                      alt="house"
+                      width={100}
+                      height={100}
+                      className="rounded-xl lg:h-[96px] lg:w-[72px] h-[50px] w-[50px]"
+                    />
+                    <div>
+                      <p className="font-bold">2 Bedroom flat</p>
+                      <p>Doncaster, United Kingdom</p>
+                    </div>
                   </div>
                 </td>
                 <td className="p-3">
@@ -47,7 +49,65 @@ const Reservation = () => {
                 </td>
                 <td className="p-3">1 night</td>
                 <td className="p-3">
-                  <button className="custom-gradient-text text-xs lg:text-xl font-bold border-b border-blue-700 font-quicksand">
+                  <button className="custom-gradient-text text-xs lg:text-xl font-bold border-b-custom-gradient  font-quicksand">
+                    Cancel Reservation
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3">
+                  <div className="flex lg:flex-row flex-col items-center gap-4">
+                    <Image
+                      src={houseImg}
+                      alt="house"
+                      width={100}
+                      height={100}
+                      className="rounded-xl lg:h-[96px] lg:w-[72px] h-[50px] w-[50px]"
+                    />
+                    <div>
+                      <p className="font-bold">2 Bedroom flat</p>
+                      <p>Doncaster, United Kingdom</p>
+                    </div>
+                  </div>
+                </td>
+                <td className="p-3">
+                  <span className="font-bold text-base lg:text-xl">
+                    € 50.00{" "}
+                  </span>
+                  <span className="text-xs lg:text-base">/night</span>
+                </td>
+                <td className="p-3">1 night</td>
+                <td className="p-3">
+                  <button className="custom-gradient-text text-xs lg:text-xl font-bold border-b-custom-gradient  font-quicksand">
+                    Cancel Reservation
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td className="p-3">
+                  <div className="flex lg:flex-row flex-col items-center gap-4">
+                    <Image
+                      src={houseImg}
+                      alt="house"
+                      width={100}
+                      height={100}
+                      className="rounded-xl lg:h-[96px] lg:w-[72px] h-[50px] w-[50px]"
+                    />
+                    <div>
+                      <p className="font-bold">2 Bedroom flat</p>
+                      <p>Doncaster, United Kingdom</p>
+                    </div>
+                  </div>
+                </td>
+                <td className="p-3">
+                  <span className="font-bold text-base lg:text-xl">
+                    € 50.00{" "}
+                  </span>
+                  <span className="text-xs lg:text-base">/night</span>
+                </td>
+                <td className="p-3">1 night</td>
+                <td className="p-3">
+                  <button className="custom-gradient-text text-xs lg:text-xl font-bold border-b-custom-gradient  font-quicksand">
                     Cancel Reservation
                   </button>
                 </td>
@@ -55,7 +115,7 @@ const Reservation = () => {
             </tbody>
           </table>
         </div>
-        <div className="rounded-2xl  px-4 border-[0.5px] border-[#2E2F38] bg-white lg:w-1/2 w-full   text-[#2E2F38]  flex flex-col justify-center  ">
+        <div className="rounded-2xl h-fit px-4 border-[0.5px] border-[#2E2F38] bg-white lg:w-1/2 w-full   text-[#2E2F38]  flex flex-col justify-center  ">
           <p className=" text-xl lg:text-2xl py-6 font-semibold font-quicksand">
             Order Summary
           </p>
