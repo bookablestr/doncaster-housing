@@ -44,7 +44,7 @@ export const Nav = () => {
     <div className=" md:text-2xl text-xl relative ">
       <nav className="py-2 flex gap-10 bg-white items-center justify-between  lg:px-12 px-4 ">
         <Link href={"/"}>
-          <h1 className="custom-gradient-text text-[40px] font-bold">
+          <h1 className="custom-gradient-text lg:text-[40px] text-2xl font-bold">
             Doncaster Housing
           </h1>
         </Link>
@@ -75,7 +75,7 @@ export const Nav = () => {
         {/* Mobile Menu Button */}
         <div
           onClick={handleNav}
-          className="cursor-pointer md:hidden block pr-[10px]"
+          className="cursor-pointer md:hidden block pr-[10px] text-black"
         >
           <Menu />
         </div>
@@ -109,12 +109,12 @@ export const Nav = () => {
               </div> */}
 
               <Link href={"/"}>
-                <h1 className="custom-gradient-text text-[40px] pl-2 font-bold">
+                <h1 className="custom-gradient-text text-[28px] pl-2 font-bold">
                   Doncaster Housing
                 </h1>
               </Link>
 
-              <ul className="space-y-[48px] pl-2 mx-3 pt-[40px]">
+              <ul className="space-y-[48px] pl-2 mx-3 pt-[40px] text-black">
                 {navItems.map((items) => {
                   const isActive = pathname === items.href;
                   return (
