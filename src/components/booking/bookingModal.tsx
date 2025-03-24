@@ -3,6 +3,7 @@ import { DarkButton } from "../ui/darkButton";
 
 import { Calendar, CheckCheck, User } from "lucide-react";
 import { Nav } from "../nav";
+import Link from "next/link";
 
 const BookingModal = () => {
   const [step, setStep] = useState(1);
@@ -160,6 +161,23 @@ const BookingModal = () => {
             </div>
           </div>
         )}
+
+        <div className="rounded-2xl lg:px-12 bg-white lg:w-1/2 w-full px-4 lg:py-12 py-6 text-[#2E2F38]  flex flex-col justify-center  items-center">
+          <p className="font-quicksand text-2xl lg:text-3xl font-bold py-6 custom-gradient-text">
+            Thank You!
+          </p>
+          <p className="text-center text-xl lg:text-2xl py-6 font-medium font-quicksand">
+            Your booking has successfully been reserved.
+            <span className="font-bold">Booking No: BOOSTR549-1156789</span>
+            Please ensure to complete your payments before 6 hour validity
+            window expires.
+          </p>
+        </div>
+        <Link href={"/reservations"}>
+          <button className="w-full custom-gradient py-2 mt-6 font-bold font-quicksand rounded-full text-white text-lg lg:text-xl transition duration-300 transform hover:scale-105">
+            My Reservation
+          </button>
+        </Link>
       </div>
     </div>
   );

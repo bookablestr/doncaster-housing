@@ -55,3 +55,13 @@ h6 {
 .border-b-custom-gradient {
   border-bottom: 0.5px solid #1b54a9;
 }
+
+th,
+td {
+  border: 0.5px solid #2e2f38;
+}
+
+table {
+  border-radius: 12px;
+  border-width: 0.5px;
+}
