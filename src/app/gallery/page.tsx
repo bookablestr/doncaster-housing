@@ -5,7 +5,7 @@ import React from "react";
 
 export default function GalleryPage() {
   return (
-    <div>
+    <div className="text-black">
       <Gallery />
       <ThirdParty />
       <Footer />
