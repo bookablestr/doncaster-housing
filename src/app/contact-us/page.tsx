@@ -5,7 +5,7 @@ import ThirdParty from "@/components/thirdParty";
 import React from "react";
 export default function ContactPage() {
   return (
-    <div>
+    <div className="bg-white">
       <Hero
         classname="pb-32"
         text1={"We are"}
