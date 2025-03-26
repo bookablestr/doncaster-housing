@@ -1,5 +1,6 @@
 import React from "react";
 import { DarkButton } from "./ui/darkButton";
+import Link from "next/link";
 
 const ThirdParty = () => {
   return (
@@ -13,7 +14,9 @@ const ThirdParty = () => {
           No third-party fees, increased profits, full control over your
           reservations.
         </p>
-        <DarkButton text="Contact Bookable" classname="w-[60px] " />
+        <Link href="/contact-us">
+          <DarkButton text="Contact BookableSTR" classname="w-[60px] " />
+        </Link>
       </div>
     </div>
   );
