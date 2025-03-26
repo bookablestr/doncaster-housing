@@ -50,7 +50,7 @@ const Hero = ({ text1, text2, text3, availability, classname }: HeroProps) => {
                 Doncaster
               </div>
 
-              <div className="border-r-[0.5px] md:border-b-0 border-b-[0.5px] p-4 flex gap-2 items-center cursor-pointer relative">
+              <div className="border-r-[0.5px] border-[#b2aeaf] md:border-b-0 border-b-[0.5px] p-4 flex gap-2 items-center cursor-pointer relative">
                 <RiCalendar2Fill color="#2E2F38" />
 
                 <DatePicker
@@ -70,7 +70,7 @@ const Hero = ({ text1, text2, text3, availability, classname }: HeroProps) => {
                 />
               </div>
 
-              <div className="border-r-[0.5px] md:border-b-0 border-b-[0.5px] p-4 flex gap-2 items-center cursor-pointer relative">
+              <div className="border-r-[0.5px] border-[#b2aeaf] md:border-b-0 border-b-[0.5px] p-4 flex gap-2 items-center cursor-pointer relative">
                 <RiCalendar2Fill color="#2E2F38" />
 
                 <DatePicker
