@@ -27,7 +27,7 @@ const HomeBody = () => {
               key={feat.id}
             >
               <Image src={feat.img} alt={feat.text} />
-              <p className="text-xl lg:text-3xl text-center pb-6 py-8">
+              <p className="text-lg lg:text-3xl text-center pb-6 py-8">
                 {feat.text}
               </p>
             </div>

@@ -55,11 +55,11 @@ const PropertySlide = () => {
               >
                 <Image src={property.img} alt={property.description} />
                 <div className="pb-6 px-2 py-8">
-                  <p className="text-2xl lg:text-3xl">{property.description}</p>
-                  <p className="text-xl lg:text-2xl py-2">
+                  <p className="text-xl lg:text-3xl">{property.description}</p>
+                  <p className="text-lg lg:text-2xl py-2">
                     {property.features}
                   </p>
-                  <p className="text-2xl pt-2 font-bold lg:text-3xl">
+                  <p className="text-xl pt-2 font-bold lg:text-3xl">
                     {property.price}
                   </p>
                 </div>
@@ -85,11 +85,11 @@ const PropertySlide = () => {
               >
                 <Image src={property.img} alt={property.description} />
                 <div className="pb-6 px-2 py-8">
-                  <p className="text-2xl lg:text-3xl">{property.description}</p>
-                  <p className="text-xl lg:text-2xl py-2">
+                  <p className="text-xl lg:text-3xl">{property.description}</p>
+                  <p className="text-lg lg:text-2xl py-2">
                     {property.features}
                   </p>
-                  <p className="text-2xl pt-2 font-bold lg:text-3xl">
+                  <p className="text-xl pt-2 font-bold lg:text-3xl">
                     {property.price}
                   </p>
                 </div>
