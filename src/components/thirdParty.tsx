@@ -47,6 +47,8 @@ const ThirdParty = () => {
         <Image
           src={rightDown}
           alt="left down"
+          width={100}
+          height={100}
           className="absolute bottom-0 left-0 w-[100px] h-auto"
         />
 
@@ -54,6 +56,8 @@ const ThirdParty = () => {
         <Image
           src={leftDown}
           alt="right down"
+          width={100}
+          height={100}
           className="absolute bottom-0 right-0 w-[100px] h-auto"
         />
       </div>

@@ -62,7 +62,7 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <div className="bg-white lg:px-16 px-6  py-6 text-[#2E2F38] block md:flex justify-between  items-center">
+      <div className="bg-white lg:px-16 px-6 text-lg md:text-xl lg:2xl  py-6 text-[#2E2F38] block md:flex justify-between  items-center">
         <div className="flex gap-2 items-center">
           <p>Copyright</p>
           <Copyright />

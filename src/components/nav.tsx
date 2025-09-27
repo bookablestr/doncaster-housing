@@ -44,7 +44,7 @@ export const Nav = () => {
     <div className=" md:text-2xl text-xl relative ">
       <nav className="py-2 flex gap-10 bg-white items-center justify-between  lg:px-12 px-4 ">
         <Link href={"/"}>
-          <h1 className="custom-gradient-text lg:text-[40px] md:text-3xl text-xl font-bold">
+          <h1 className="custom-gradient-text lg:text-[40px] md:text-3xl text-2xl font-bold">
             Doncaster Housing
           </h1>
         </Link>
