@@ -15,6 +15,8 @@ const ThirdParty = () => {
         <Image
           src={rightUp}
           alt="left up"
+          width={100}
+          height={100}
           className="absolute top-0 left-0 w-[100px] h-auto"
         />
 
@@ -22,6 +24,8 @@ const ThirdParty = () => {
         <Image
           src={leftUp}
           alt="right up"
+          width={100}
+          height={100}
           className="absolute top-0 right-0 w-[100px] h-auto"
         />
 
