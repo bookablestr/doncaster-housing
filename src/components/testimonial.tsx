@@ -13,7 +13,7 @@ import img7 from "@/images/img26.png";
 
 const Testimonial = () => {
   return (
-    <div className="text-black">
+    <div className="text-black bg-white">
       <div className="pt-20 pb-4">
         <div className="relative">
           <div className="relative w-full h-[300px] overflow-hidden hidden md:flex gap-10">

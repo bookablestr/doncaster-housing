@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const ThirdParty = () => {
   return (
-    <div className="lg:px-12 px-6 lg:py-16 py-10 text-black relative">
+    <div className="lg:px-12 px-6 lg:py-16 py-10 bg-white text-black relative">
       <div className="custom-third-gradient py-20 rounded-2xl gap-5 flex flex-col justify-center items-center relative overflow-hidden">
         {/* Top Left */}
         <Image

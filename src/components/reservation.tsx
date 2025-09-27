@@ -3,7 +3,7 @@ import houseImg from "@/images/bg2.png";
 import Image from "next/image";
 const Reservation = () => {
   return (
-    <div className="bg-white py-10 lg:px-12 px-6">
+    <div className="bg-white py-10 lg:px-12 px-6 text-[#121212] ">
       <div className="text-[#2E2F38] flex gap-2 items-center">
         <div className="bg-[#CCE9FF] text-2xl p-2 rounded-full font-bold">
           NJ
